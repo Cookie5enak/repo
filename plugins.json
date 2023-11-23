@@ -434,11 +434,11 @@
         "name": "Hentaiheaven"
     },
     {
-        "iconUrl": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://idlixian.com&size=16",
+        "iconUrl": "https://media.list.ly/production/1205724/5527373/5527373-apa-itu-idlix_600px.png?ver=9609436594",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/hexated/cloudstream-extensions-hexated",
         "fileSize": 25190,
-        "status": 0,
+        "status": 1,
         "language": "id",
         "authors": [
             "Hexated"
