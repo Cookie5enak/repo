@@ -1,0 +1,8 @@
+{
+    "name": "Cookies",
+    "description": "all language",
+    "manifestVersion": 1,
+    "pluginLists": [
+        "https://raw.githubusercontent.com/Cookie5enak/cloudstream-extensions-hexated/builds/plugins.json"
+    ]
+}
