@@ -31,8 +31,8 @@ class IdlixProvider : MainAPI() {
         "$mainUrl/trending/page/?get=tv" to "Trending TV Series",
         "$mainUrl/movie/page/" to "Movie Terbaru",
         "$mainUrl/tvseries/page/" to "TV Series Terbaru",
-//        "$mainUrl/network/netflix/page/" to "Netflix",
-//        "$mainUrl/genre/anime/page/" to "Anime",
+        "$mainUrl/network/netflix/page/" to "Netflix",
+        "$mainUrl/genre/anime/page/" to "Anime",
 //        "$mainUrl/genre/drama-korea/page/" to "Drama Korea",
     )
 
