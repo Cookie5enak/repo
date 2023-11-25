@@ -286,6 +286,12 @@ class IdlixProvider : MainAPI() {
         @JsonProperty("securedLink") val securedLink: String?,
     )
 
+        data class ResponseSource(
+        @JsonProperty("INDIHOME") val hls: Boolean,
+        @JsonProperty("videoSource") val videoSource: String,
+        @JsonProperty("securedLink") val securedLink: String?,
+    )
+        
     data class Tracks(
         @JsonProperty("kind") val kind: String?,
         @JsonProperty("file") val file: String,
