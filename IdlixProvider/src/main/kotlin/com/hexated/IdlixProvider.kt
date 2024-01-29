@@ -29,11 +29,11 @@ class IdlixProvider : MainAPI() {
         "$mainUrl/" to "Featured",
         "$mainUrl/trending/page/?get=movies" to "Trending Movies",
         "$mainUrl/trending/page/?get=tv" to "Trending TV Series",
-        "$mainUrl/movie/page/" to "Movie Terbaru",
-        "$mainUrl/tvseries/page/" to "TV Series Terbaru",
-        "$mainUrl/network/netflix/page/" to "Netflix",
-        "$mainUrl/genre/anime/page/" to "Anime",
-        "$mainUrl/genre/drama-korea/page/" to "Drama Korea",
+        "$mainUrl/movie/page/?get=tv" to "Movie Terbaru",
+        "$mainUrl/tvseries/page/?get=tv" to "TV Series Terbaru",
+        "$mainUrl/network/netflix/page/?get=tv" to "Netflix",
+        "$mainUrl/genre/anime/page/?get=tv" to "Anime",
+        "$mainUrl/genre/drama-korea/page/?get=tv" to "Drama Korea",
     )
 
     private fun getBaseUrl(url: String): String {
