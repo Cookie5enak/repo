@@ -11,7 +11,7 @@ import org.jsoup.nodes.Element
 import java.net.URI
 
 class IdlixProvider : MainAPI() {
-    override var mainUrl = "https://tv.idlixofficialx.com/"
+    override var mainUrl = "https://tv.idlixofficial.co"
     private var directUrl = mainUrl
     override var name = "Idlix"
     override val hasMainPage = true
@@ -29,11 +29,11 @@ class IdlixProvider : MainAPI() {
         "$mainUrl/" to "Featured",
         "$mainUrl/trending/page/?get=movies" to "Trending Movies",
         "$mainUrl/trending/page/?get=tv" to "Trending TV Series",
-        "$mainUrl/movie/page/?get=tv" to "Film Terbaru",
-        "$mainUrl/tvseries/page/?get=tv" to "TV Series Terbaru",
-        "$mainUrl/network/netflix/page/?get=tv" to "Netflix",
-        "$mainUrl/genre/anime/page/?get=tv" to "Anime",
-        "$mainUrl/genre/drama-korea/page/?get=tv" to "Drama Korea",
+        "$mainUrl/movie/page/" to "Movie Terbaru",
+        "$mainUrl/tvseries/page/" to "TV Series Terbaru",
+//        "$mainUrl/network/netflix/page/" to "Netflix",
+//        "$mainUrl/genre/anime/page/" to "Anime",
+//        "$mainUrl/genre/drama-korea/page/" to "Drama Korea",
     )
 
     private fun getBaseUrl(url: String): String {
@@ -280,7 +280,12 @@ class IdlixProvider : MainAPI() {
         }
     }
 
-        
+    data class ResponseSource(
+        @JsonProperty("hls") val hls: Boolean,
+        @JsonProperty("videoSource") val videoSource: String,
+        @JsonProperty("securedLink") val securedLink: String?,
+    )
+
     data class Tracks(
         @JsonProperty("kind") val kind: String?,
         @JsonProperty("file") val file: String,
