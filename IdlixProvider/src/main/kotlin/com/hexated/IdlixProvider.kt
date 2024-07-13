@@ -29,7 +29,7 @@ class IdlixProvider : MainAPI() {
         "$mainUrl/" to "Featured",
         "$mainUrl/trending/page/?get=movies" to "Trending Movies",
         "$mainUrl/trending/page/?get=tv" to "Trending TV Series",
-        "$mainUrl/movie/page/?get=tv" to "Movie Terbaru",
+        "$mainUrl/movie/page/?get=tv" to "Film Terbaru",
         "$mainUrl/tvseries/page/?get=tv" to "TV Series Terbaru",
         "$mainUrl/network/netflix/page/?get=tv" to "Netflix",
         "$mainUrl/genre/anime/page/?get=tv" to "Anime",
@@ -281,7 +281,7 @@ class IdlixProvider : MainAPI() {
     }
 
     data class ResponseSource(
-        @JsonProperty("hls") val hls: Boolean,
+        @JsonProperty("HLS") val HLS: Boolean,
         @JsonProperty("videoSource") val videoSource: String,
         @JsonProperty("securedLink") val securedLink: String?,
     )
