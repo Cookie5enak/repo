@@ -282,6 +282,7 @@ class IdlixProvider : MainAPI() {
 
     data class ResponseSource(
         @JsonProperty("hls") val hls: Boolean,
+        @JsonProperty("VidHide") val VidHide: Boolean,
         @JsonProperty("videoSource") val videoSource: String,
         @JsonProperty("securedLink") val securedLink: String?,
     )
