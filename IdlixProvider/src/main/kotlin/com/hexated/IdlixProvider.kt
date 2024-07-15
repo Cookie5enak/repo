@@ -11,7 +11,7 @@ import org.jsoup.nodes.Element
 import java.net.URI
 
 class IdlixProvider : MainAPI() {
-    override var mainUrl = "https://tv.idlixofficial.co"
+    override var mainUrl = "https://vip.idlixofficialx.net/"
     private var directUrl = mainUrl
     override var name = "Idlix"
     override val hasMainPage = true
@@ -282,6 +282,7 @@ class IdlixProvider : MainAPI() {
 
     data class ResponseSource(
         @JsonProperty("hls") val hls: Boolean,
+        @JsonProperty("vidhide") val vidhide: String,
         @JsonProperty("videoSource") val videoSource: String,
         @JsonProperty("securedLink") val securedLink: String?,
     )
